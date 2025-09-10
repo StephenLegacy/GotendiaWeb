@@ -4,10 +4,15 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import { Metadata } from "next";
 
-export const metadata = {
-  title: "FarmConnect",
-  description: "Grow Together with Next‑Gen Farming Tools",
+export const metadata: Metadata = {
+  title: "Gotendia",
+  description:
+    "Bridging the gap between between innovative technology and business success.",
+  icons: {
+    icon: "/favicon.png",
+  },
 };
 
 export default function RootLayout({

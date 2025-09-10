@@ -29,24 +29,24 @@ const values = [
 
 const stats = [
   {
-    number: "100+",
-    label: "Successful Projects",
-    description: "Delivered across various industries",
+    number: "Product Demos",
+    label: "Concepts Validated",
+    description: "Rapid prototypes to test and refine ideas",
   },
   {
-    number: "50+",
-    label: "Happy Clients",
-    description: "Trusted partnerships worldwide",
+    number: "Custom Solutions",
+    label: "Tailored Implementations",
+    description: "Built to meet your business goals and workflows",
   },
   {
-    number: "24/7",
-    label: "Support Available",
-    description: "Always here when you need us",
+    number: "Reliable Support",
+    label: "Responsive Assistance",
+    description: "Here when you need us during and after launch",
   },
   {
-    number: "5+",
-    label: "Years Experience",
-    description: "Deep expertise in modern tech",
+    number: "Agile Delivery",
+    label: "Iterative Process",
+    description: "Ship value quickly with continuous improvement",
   },
 ];
 
@@ -63,7 +63,7 @@ export function AboutSection() {
                 <span className="gradient-primary text-gradient">Gotendia</span>
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Gotendia is a leading software development company dedicated to
+                Gotendia is a software development company dedicated to
                 transforming businesses through innovative technology solutions.
                 We specialize in web and mobile development, AI integration, and
                 comprehensive digital services.

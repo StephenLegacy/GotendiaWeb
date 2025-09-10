@@ -31,10 +31,6 @@ export function HeroSection() {
   const heroPatternUrl =
     typeof heroPattern === "string" ? heroPattern : heroPattern?.src ?? "";
 
-  // quick dev console (remove later)
-  // console.log("heroPattern import:", typeof heroPattern, heroPattern);
-  // console.log("resolved heroPatternUrl:", heroPatternUrl);
-
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Pattern */}
@@ -42,7 +38,6 @@ export function HeroSection() {
         aria-hidden
         className="absolute inset-0 opacity-10 dark:opacity-20 z-0 pointer-events-none"
         style={{
-          // make sure the URL is quoted — safer across environments
           backgroundImage: heroPatternUrl
             ? `url("${heroPatternUrl}")`
             : undefined,
@@ -91,24 +86,30 @@ export function HeroSection() {
               </Button>
             </div>
 
-            {/* Stats */}
+            {/* Updated — qualitative highlights instead of big numeric claims */}
             <div className="grid grid-cols-3 gap-6 pt-8">
               <div>
-                <div className="text-2xl font-bold text-primary">100+</div>
+                <div className="text-2xl font-bold text-primary">
+                  Active Projects
+                </div>
                 <div className="text-sm text-muted-foreground">
-                  Projects Delivered
+                  Building real solutions with partners
                 </div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">50+</div>
+                <div className="text-2xl font-bold text-primary">
+                  Pilot Partnerships
+                </div>
                 <div className="text-sm text-muted-foreground">
-                  Happy Clients
+                  Focused collaborations that prove value
                 </div>
               </div>
               <div>
-                <div className="text-2xl font-bold text-primary">5+</div>
+                <div className="text-2xl font-bold text-primary">
+                  Focused Expertise
+                </div>
                 <div className="text-sm text-muted-foreground">
-                  Years Experience
+                  Specialization in web, mobile & AI
                 </div>
               </div>
             </div>

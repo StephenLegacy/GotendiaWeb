@@ -1,8 +1,23 @@
-import { Mail, Phone, MapPin, Github, Twitter, Linkedin } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, Linkedin } from "lucide-react";
+
+// Custom component for the official X logo
+function XLogo({ className }: { className?: string }) {
+  return (
+    <svg
+      className={className}
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      aria-hidden="true"
+    >
+      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+    </svg>
+  );
+}
 
 const socialLinks = [
-  { icon: Github, href: "#", label: "GitHub" },
-  { icon: Twitter, href: "#", label: "Twitter" },
+  { icon: Instagram, href: "#", label: "Instagram" },
+  { icon: XLogo, href: "#", label: "X" },
   { icon: Linkedin, href: "#", label: "LinkedIn" },
 ];
 
@@ -18,6 +33,8 @@ const footerLinks = {
 };
 
 export function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-card border-t border-border">
       <div className="container mx-auto px-6 py-16">
@@ -92,7 +109,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <p className="text-sm text-muted-foreground">
-            © 2024 Gotendia. All rights reserved.
+            © {year} Gotendia. All rights reserved.
           </p>
           <div className="flex space-x-6 text-sm text-muted-foreground">
             <a href="#" className="hover:text-accent transition-smooth">

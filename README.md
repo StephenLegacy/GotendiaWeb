@@ -1,6 +1,6 @@
 # Gotendia — README
 
-Welcome — this repo contains the Gotendia marketing site built with Next.js (App Router), TypeScript, Tailwind CSS, and a small component library (UI primitives in `components/ui`). This README explains how to get the project running locally, build & deploy, and covers a few common gotchas you might run into (favicons, imported images, text gradients).
+Welcome — this repo contains the Gotendia site built with Next.js (App Router), TypeScript, Tailwind CSS, and a small component library (UI primitives in `components/ui`). This README explains how to get the project running locally, build & deploy.
 
 **Repository**: https://github.com/GOTENDIA/gotendia.git
 
@@ -8,14 +8,17 @@ Welcome — this repo contains the Gotendia marketing site built with Next.js (A
 
 1.  **clone**
     ```sh
-    git clone [https://github.com/GOTENDIA/gotendia.git](https://github.com/GOTENDIA/gotendia.git)
+    git clone https://github.com/GOTENDIA/gotendia.git
+    ```
+2.  **move into cloned the directory**
+    ```sh
     cd gotendia
     ```
-2.  **install dependencies** (npm recommended because repo includes `package-lock.json`)
+3.  **install dependencies** (npm recommended because repo includes `package-lock.json`)
     ```sh
     npm install
     ```
-3.  **run development server**
+4.  **run development server**
     ```sh
     npm run dev
     ```
